@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A70CB1A15376B2000E193A8 /* DateProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A70CB1915376B2000E193A8 /* DateProvider.m */; };
 		1A8CC902153745D3007C1413 /* MathSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8CC901153745D3007C1413 /* MathSpec.m */; };
 		1A8CC90515374634007C1413 /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8CC90415374634007C1413 /* libKiwi.a */; };
 		1A8CC90915375162007C1413 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8CC90815375162007C1413 /* Person.m */; };
@@ -35,8 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A70CB1815376B2000E193A8 /* DateProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateProvider.h; sourceTree = "<group>"; };
+		1A70CB1915376B2000E193A8 /* DateProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateProvider.m; sourceTree = "<group>"; };
 		1A8CC901153745D3007C1413 /* MathSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathSpec.m; sourceTree = "<group>"; };
-		1A8CC90415374634007C1413 /* libKiwi.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libKiwi.a; path = "Vendor/Kiwi/build/Release-iphoneos/libKiwi.a"; sourceTree = "<group>"; };
+		1A8CC90415374634007C1413 /* libKiwi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKiwi.a; path = "Vendor/Kiwi/build/Release-iphoneos/libKiwi.a"; sourceTree = "<group>"; };
 		1A8CC90715375162007C1413 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		1A8CC90815375162007C1413 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		1A8CC90A15375177007C1413 /* PersonSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonSpec.m; sourceTree = "<group>"; };
@@ -88,6 +91,8 @@
 			children = (
 				1A8CC90715375162007C1413 /* Person.h */,
 				1A8CC90815375162007C1413 /* Person.m */,
+				1A70CB1815376B2000E193A8 /* DateProvider.h */,
+				1A70CB1915376B2000E193A8 /* DateProvider.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 				1AADFAB215373D7B00CFAFFF /* main.m in Sources */,
 				1AADFAB615373D7B00CFAFFF /* AppDelegate.m in Sources */,
 				1A8CC90915375162007C1413 /* Person.m in Sources */,
+				1A70CB1A15376B2000E193A8 /* DateProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
