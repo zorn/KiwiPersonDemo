@@ -35,17 +35,17 @@
 		1AADFAA515373D7B00CFAFFF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1AADFAA715373D7B00CFAFFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1AADFAA915373D7B00CFAFFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1AADFAAD15373D7B00CFAFFF /* KiwiPersonDemo-Info.plist */ = {isa = PBXFileReference; path = "KiwiPersonDemo-Info.plist"; sourceTree = "<group>"; };
+		1AADFAAD15373D7B00CFAFFF /* KiwiPersonDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KiwiPersonDemo-Info.plist"; sourceTree = "<group>"; };
 		1AADFAAF15373D7B00CFAFFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1AADFAB115373D7B00CFAFFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1AADFAB315373D7B00CFAFFF /* KiwiPersonDemo-Prefix.pch */ = {isa = PBXFileReference; path = "KiwiPersonDemo-Prefix.pch"; sourceTree = "<group>"; };
-		1AADFAB415373D7B00CFAFFF /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		1AADFAB315373D7B00CFAFFF /* KiwiPersonDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KiwiPersonDemo-Prefix.pch"; sourceTree = "<group>"; };
+		1AADFAB415373D7B00CFAFFF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1AADFAB515373D7B00CFAFFF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1AADFABC15373D7B00CFAFFF /* KiwiPersonDemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiwiPersonDemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AADFABD15373D7B00CFAFFF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		1AADFAC515373D7B00CFAFFF /* KiwiPersonDemoTests-Info.plist */ = {isa = PBXFileReference; path = "KiwiPersonDemoTests-Info.plist"; sourceTree = "<group>"; };
+		1AADFAC515373D7B00CFAFFF /* KiwiPersonDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KiwiPersonDemoTests-Info.plist"; sourceTree = "<group>"; };
 		1AADFAC715373D7B00CFAFFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1AADFAC915373D7B00CFAFFF /* KiwiPersonDemoTests.h */ = {isa = PBXFileReference; path = KiwiPersonDemoTests.h; sourceTree = "<group>"; };
+		1AADFAC915373D7B00CFAFFF /* KiwiPersonDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KiwiPersonDemoTests.h; sourceTree = "<group>"; };
 		1AADFACA15373D7B00CFAFFF /* KiwiPersonDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KiwiPersonDemoTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
