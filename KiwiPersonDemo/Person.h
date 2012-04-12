@@ -18,5 +18,6 @@
 @property (strong) NSDate *birthdate;
 @property (strong) DateProvider *dateProvider;
 @property (readonly) NSInteger yearsOld;
+@property (readonly) NSString *displayName;
 
 @end

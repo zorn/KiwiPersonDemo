@@ -99,7 +99,18 @@ describe(@"The Person class", ^{
     
     context(@"with a firstName and lastName assigned", ^{
         
-        pending(@"has a displayName method that returns 'FirstName LastName'", ^{
+        beforeEach(^{ // Occurs before each enclosed "it"
+            person.firstName = @"Mike";
+            person.lastName = @"Zornek";
+        });
+        
+        afterEach(^{ // Occurs after each enclosed "it"
+            person.firstName = nil;
+            person.lastName = nil;
+        });
+        
+        it(@"has a displayName method that returns 'FirstName LastName'", ^{
+            [[person.displayName should] equal:@"Mike Zornek"];
         });
         
         pending(@"has a displayNameWithLastNameFirst:YES method that returns 'LastName, FirstName'", ^{
