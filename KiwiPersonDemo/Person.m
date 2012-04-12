@@ -32,10 +32,10 @@
 {
     if (!self.dateProvider) {
         NSLog(@"warning: returning 0 for -[Person yearsOld] because Person could not find a DateProvider");
-        return 0;
+        return -1;
     } else if (!self.birthdate) {
         NSLog(@"warning: returning 0 for -[Person yearsOld] because Person did not have a birthdate");
-        return 0;
+        return -1;
     } else {
         NSDate *now = [self.dateProvider date];
         NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
