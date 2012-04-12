@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1A8CC902153745D3007C1413 /* MathSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8CC901153745D3007C1413 /* MathSpec.m */; };
 		1A8CC90515374634007C1413 /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8CC90415374634007C1413 /* libKiwi.a */; };
+		1A8CC90915375162007C1413 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8CC90815375162007C1413 /* Person.m */; };
+		1A8CC90B15375177007C1413 /* PersonSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8CC90A15375177007C1413 /* PersonSpec.m */; };
 		1AADFAA615373D7B00CFAFFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AADFAA515373D7B00CFAFFF /* UIKit.framework */; };
 		1AADFAA815373D7B00CFAFFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AADFAA715373D7B00CFAFFF /* Foundation.framework */; };
 		1AADFAAA15373D7B00CFAFFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AADFAA915373D7B00CFAFFF /* CoreGraphics.framework */; };
@@ -35,6 +37,9 @@
 /* Begin PBXFileReference section */
 		1A8CC901153745D3007C1413 /* MathSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathSpec.m; sourceTree = "<group>"; };
 		1A8CC90415374634007C1413 /* libKiwi.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libKiwi.a; path = "Vendor/Kiwi/build/Release-iphoneos/libKiwi.a"; sourceTree = "<group>"; };
+		1A8CC90715375162007C1413 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		1A8CC90815375162007C1413 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		1A8CC90A15375177007C1413 /* PersonSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonSpec.m; sourceTree = "<group>"; };
 		1AADFAA115373D7B00CFAFFF /* KiwiPersonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiwiPersonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AADFAA515373D7B00CFAFFF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1AADFAA715373D7B00CFAFFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -78,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A8CC90615375155007C1413 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A8CC90715375162007C1413 /* Person.h */,
+				1A8CC90815375162007C1413 /* Person.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		1AADFA9615373D7B00CFAFFF = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +126,7 @@
 		1AADFAAB15373D7B00CFAFFF /* KiwiPersonDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1A8CC90615375155007C1413 /* Models */,
 				1AADFAB415373D7B00CFAFFF /* AppDelegate.h */,
 				1AADFAB515373D7B00CFAFFF /* AppDelegate.m */,
 				1AADFAAC15373D7B00CFAFFF /* Supporting Files */,
@@ -134,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				1A8CC901153745D3007C1413 /* MathSpec.m */,
+				1A8CC90A15375177007C1413 /* PersonSpec.m */,
 				1AADFAC915373D7B00CFAFFF /* KiwiPersonDemoTests.h */,
 				1AADFACA15373D7B00CFAFFF /* KiwiPersonDemoTests.m */,
 				1AADFAC415373D7B00CFAFFF /* Supporting Files */,
@@ -258,6 +274,7 @@
 			files = (
 				1AADFAB215373D7B00CFAFFF /* main.m in Sources */,
 				1AADFAB615373D7B00CFAFFF /* AppDelegate.m in Sources */,
+				1A8CC90915375162007C1413 /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +284,7 @@
 			files = (
 				1AADFACB15373D7B00CFAFFF /* KiwiPersonDemoTests.m in Sources */,
 				1A8CC902153745D3007C1413 /* MathSpec.m in Sources */,
+				1A8CC90B15375177007C1413 /* PersonSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
