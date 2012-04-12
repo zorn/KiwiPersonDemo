@@ -49,7 +49,16 @@
 
 - (NSString *)displayName
 {
-    return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
+    return [self displayNameWithLastNameFirst:NO];
+}
+
+- (NSString *)displayNameWithLastNameFirst:(BOOL)shouldDisplayLastNameFirst
+{
+    if (shouldDisplayLastNameFirst) {
+        return [NSString stringWithFormat:@"%@, %@", self.lastName, self.firstName];
+    } else {
+        return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
+    }
 }
 
 @end

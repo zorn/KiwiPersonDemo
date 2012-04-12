@@ -86,13 +86,14 @@ describe(@"The Person class", ^{
             });
         });
         
+        // Homework
         pending(@"has a setName method which auto splits into firstName and lastName", ^{
-//            Mike Zornek
-//            Zornek, Mike
-//            Mike Zornek, PhD
-//            Mr. Michael Zornek
-//            Michael Donald George Zornek
-//            Mike Zornek, Jr.
+//            Mike Zornek -> f:Mike l:Zornek
+//            Zornek, Mike -> f: Mike l:Zornek
+//            Mike Zornek, PhD -> f:Mike l:Zornek, PhD
+//            Mr. Michael Zornek -> f:Mike l:Zornek, Mr.
+//            Michael Donald George Zornek -> f:Michael Donald George l:Zornek
+//            Mike Zornek, Jr. -> f:Mike l:Zornek, Jr.
         });
         
     });
@@ -113,7 +114,8 @@ describe(@"The Person class", ^{
             [[person.displayName should] equal:@"Mike Zornek"];
         });
         
-        pending(@"has a displayNameWithLastNameFirst:YES method that returns 'LastName, FirstName'", ^{
+        it(@"has a displayNameWithLastNameFirst:YES method that returns 'LastName, FirstName'", ^{
+            [[[person displayNameWithLastNameFirst:YES] should] equal:@"Zornek, Mike"];
         });
         
     });

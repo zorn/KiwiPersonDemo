@@ -20,4 +20,6 @@
 @property (readonly) NSInteger yearsOld;
 @property (readonly) NSString *displayName;
 
+- (NSString *)displayNameWithLastNameFirst:(BOOL)shouldDisplayLastNameFirst;
+
 @end
