@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A8CC902153745D3007C1413 /* MathSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8CC901153745D3007C1413 /* MathSpec.m */; };
+		1A8CC90515374634007C1413 /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8CC90415374634007C1413 /* libKiwi.a */; };
 		1AADFAA615373D7B00CFAFFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AADFAA515373D7B00CFAFFF /* UIKit.framework */; };
 		1AADFAA815373D7B00CFAFFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AADFAA715373D7B00CFAFFF /* Foundation.framework */; };
 		1AADFAAA15373D7B00CFAFFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AADFAA915373D7B00CFAFFF /* CoreGraphics.framework */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A8CC901153745D3007C1413 /* MathSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathSpec.m; sourceTree = "<group>"; };
+		1A8CC90415374634007C1413 /* libKiwi.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libKiwi.a; path = "Vendor/Kiwi/build/Release-iphoneos/libKiwi.a"; sourceTree = "<group>"; };
 		1AADFAA115373D7B00CFAFFF /* KiwiPersonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiwiPersonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AADFAA515373D7B00CFAFFF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1AADFAA715373D7B00CFAFFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A8CC90515374634007C1413 /* libKiwi.a in Frameworks */,
 				1AADFABE15373D7B00CFAFFF /* SenTestingKit.framework in Frameworks */,
 				1AADFABF15373D7B00CFAFFF /* UIKit.framework in Frameworks */,
 				1AADFAC015373D7B00CFAFFF /* Foundation.framework in Frameworks */,
@@ -95,6 +100,7 @@
 		1AADFAA415373D7B00CFAFFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A8CC90415374634007C1413 /* libKiwi.a */,
 				1AADFAA515373D7B00CFAFFF /* UIKit.framework */,
 				1AADFAA715373D7B00CFAFFF /* Foundation.framework */,
 				1AADFAA915373D7B00CFAFFF /* CoreGraphics.framework */,
@@ -127,6 +133,7 @@
 		1AADFAC315373D7B00CFAFFF /* KiwiPersonDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				1A8CC901153745D3007C1413 /* MathSpec.m */,
 				1AADFAC915373D7B00CFAFFF /* KiwiPersonDemoTests.h */,
 				1AADFACA15373D7B00CFAFFF /* KiwiPersonDemoTests.m */,
 				1AADFAC415373D7B00CFAFFF /* Supporting Files */,
@@ -259,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AADFACB15373D7B00CFAFFF /* KiwiPersonDemoTests.m in Sources */,
+				1A8CC902153745D3007C1413 /* MathSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,8 +378,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KiwiPersonDemo/KiwiPersonDemo-Prefix.pch";
 				INFOPLIST_FILE = "KiwiPersonDemoTests/KiwiPersonDemoTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/KiwiPublicHeaders";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -387,8 +397,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KiwiPersonDemo/KiwiPersonDemo-Prefix.pch";
 				INFOPLIST_FILE = "KiwiPersonDemoTests/KiwiPersonDemoTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/KiwiPublicHeaders";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -412,6 +424,7 @@
 				1AADFAD015373D7B00CFAFFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AADFAD115373D7B00CFAFFF /* Build configuration list for PBXNativeTarget "KiwiPersonDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				1AADFAD315373D7B00CFAFFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
